@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Morning Gym Quest View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MorningGymQuestViewController" customModule="Assigment_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-silhouette-of-a-young-fitness-enthusiast-jogging-against-a-stunning-sunrise-vertical-mobile-wallpaper-ai-generated-free-photo" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-Mc-wsC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bA1-jc-ucc">
+                                <rect key="frame" x="20" y="20" width="353" height="744"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Morning Gym Quest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-8d-axX">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="374"/>
+                                        <color key="backgroundColor" white="1" alpha="0.58666183774834435" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view alpha="0.80000000000000004" contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gsn-VE-Zzi">
+                                        <rect key="frame" x="0.0" y="394" width="353" height="300"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-Tw-QJ9">
+                                                <rect key="frame" x="16" y="16" width="321" height="268"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jog for 10 mintues or skiip warmup ? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxD-Ny-GNs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="126"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-TU-6qG">
+                                                        <rect key="frame" x="0.0" y="142" width="321" height="126"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-AS-Fzv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="126"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Jog for 10 miintures"/>
+                                                                <connections>
+                                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ut8-yL-FYs"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-Mn-SuW">
+                                                                <rect key="frame" x="171.66666666666663" y="0.0" width="149.33333333333337" height="126"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Skip warm up "/>
+                                                                <connections>
+                                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWm-H7-l1c"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MZt-Tw-QJ9" firstAttribute="leading" secondItem="Gsn-VE-Zzi" secondAttribute="leading" constant="16" id="2Sy-UW-IRZ"/>
+                                            <constraint firstAttribute="height" constant="300" id="TQg-hN-2Zw"/>
+                                            <constraint firstItem="MZt-Tw-QJ9" firstAttribute="top" secondItem="Gsn-VE-Zzi" secondAttribute="top" constant="16" id="fpt-1d-ymr"/>
+                                            <constraint firstAttribute="bottom" secondItem="MZt-Tw-QJ9" secondAttribute="bottom" constant="16" id="ueR-eb-Iza"/>
+                                            <constraint firstAttribute="trailing" secondItem="MZt-Tw-QJ9" secondAttribute="trailing" constant="16" id="zhN-Aj-gMO"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Station 1 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meK-0D-dm0">
+                                        <rect key="frame" x="0.0" y="714" width="353" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="0.59028352649006621" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bA1-jc-ucc" secondAttribute="trailing" constant="20" id="3zz-4L-edB"/>
+                            <constraint firstAttribute="bottom" secondItem="aE5-Mc-wsC" secondAttribute="bottom" id="Qpb-3g-z9e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bA1-jc-ucc" secondAttribute="bottom" constant="20" id="b27-d9-DZ2"/>
+                            <constraint firstItem="aE5-Mc-wsC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cFm-8r-xCN"/>
+                            <constraint firstItem="bA1-jc-ucc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="hdx-aq-QNx"/>
+                            <constraint firstItem="aE5-Mc-wsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rMT-cj-91w"/>
+                            <constraint firstItem="bA1-jc-ucc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vX7-WA-PZ1"/>
+                            <constraint firstItem="bA1-jc-ucc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="wBC-dt-k9P"/>
+                            <constraint firstAttribute="bottom" secondItem="aE5-Mc-wsC" secondAttribute="bottom" id="xo4-Pz-yuG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aE5-Mc-wsC" secondAttribute="trailing" id="xsA-8b-D92"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="aE5-Mc-wsC" id="axc-Tl-rR5"/>
+                        <outlet property="progressLabel" destination="meK-0D-dm0" id="cuG-rE-MMe"/>
+                        <outlet property="questionLabel" destination="xxD-Ny-GNs" id="yqh-Sk-MuG"/>
+                        <outletCollection property="choiceButtons" destination="ZUF-AS-Fzv" collectionClass="NSMutableArray" id="rRJ-CL-YWB"/>
+                        <outletCollection property="choiceButtons" destination="aH4-Mn-SuW" collectionClass="NSMutableArray" id="Ez8-kc-Ve6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.38028169014085" y="-28.244274809160306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a-silhouette-of-a-young-fitness-enthusiast-jogging-against-a-stunning-sunrise-vertical-mobile-wallpaper-ai-generated-free-photo" width="366" height="653.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

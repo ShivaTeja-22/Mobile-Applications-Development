@@ -119,7 +119,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="convertTapped:" destination="Ydp-E2-WKr" eventType="touchUpInside" id="2i3-LZ-cd4"/>
-                                                    <segue destination="y40-Ld-wVm" kind="presentation" identifier="toResultVC" id="R6i-bM-rYb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -159,6 +158,7 @@
                         <outlet property="inrSwitch" destination="Zbg-hj-Wti" id="Lvg-LU-nuC"/>
                         <outlet property="nrsSwitch" destination="AG0-xe-7xl" id="rR8-fW-iBH"/>
                         <outlet property="usdTextField" destination="FAD-yE-l1Y" id="GSw-Jb-1Df"/>
+                        <segue destination="y40-Ld-wVm" kind="presentation" identifier="toResultVC" id="Nnf-wo-Hel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjU-k8-8ja" sceneMemberID="firstResponder"/>

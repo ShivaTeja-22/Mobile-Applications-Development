@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,69 +13,51 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MorningGymQuestViewController" customModule="Assigment_5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-silhouette-of-a-young-fitness-enthusiast-jogging-against-a-stunning-sunrise-vertical-mobile-wallpaper-ai-generated-free-photo" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-Mc-wsC">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgWarmUp" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-Mc-wsC">
+                                <rect key="frame" x="59" y="0.0" width="734" height="393"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bA1-jc-ucc">
-                                <rect key="frame" x="20" y="20" width="353" height="744"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bA1-jc-ucc">
+                                <rect key="frame" x="79" y="20" width="694" height="298"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Morning Gym Quest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-8d-axX">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="374"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Gym Quest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-8d-axX">
+                                        <rect key="frame" x="0.0" y="0.0" width="694" height="59.666666666666664"/>
                                         <color key="backgroundColor" white="1" alpha="0.58666183774834435" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view alpha="0.80000000000000004" contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gsn-VE-Zzi">
-                                        <rect key="frame" x="0.0" y="394" width="353" height="300"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jog for 10 mintues or skiip warmup ? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxD-Ny-GNs">
+                                        <rect key="frame" x="0.0" y="79.666666666666671" width="694" height="59.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-TU-6qG">
+                                        <rect key="frame" x="0.0" y="159" width="694" height="59.666666666666657"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-Tw-QJ9">
-                                                <rect key="frame" x="16" y="16" width="321" height="268"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jog for 10 mintues or skiip warmup ? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxD-Ny-GNs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="126"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-TU-6qG">
-                                                        <rect key="frame" x="0.0" y="142" width="321" height="126"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-AS-Fzv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="126"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Jog for 10 miintures"/>
-                                                                <connections>
-                                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ut8-yL-FYs"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-Mn-SuW">
-                                                                <rect key="frame" x="171.66666666666663" y="0.0" width="149.33333333333337" height="126"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Skip warm up "/>
-                                                                <connections>
-                                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWm-H7-l1c"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-AS-Fzv">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="59.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Jog for 10 miintures"/>
+                                                <connections>
+                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ut8-yL-FYs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-Mn-SuW">
+                                                <rect key="frame" x="358" y="0.0" width="336" height="59.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Skip warm up "/>
+                                                <connections>
+                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWm-H7-l1c"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="MZt-Tw-QJ9" firstAttribute="leading" secondItem="Gsn-VE-Zzi" secondAttribute="leading" constant="16" id="2Sy-UW-IRZ"/>
-                                            <constraint firstAttribute="height" constant="300" id="TQg-hN-2Zw"/>
-                                            <constraint firstItem="MZt-Tw-QJ9" firstAttribute="top" secondItem="Gsn-VE-Zzi" secondAttribute="top" constant="16" id="fpt-1d-ymr"/>
-                                            <constraint firstAttribute="bottom" secondItem="MZt-Tw-QJ9" secondAttribute="bottom" constant="16" id="ueR-eb-Iza"/>
-                                            <constraint firstAttribute="trailing" secondItem="MZt-Tw-QJ9" secondAttribute="trailing" constant="16" id="zhN-Aj-gMO"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Station 1 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meK-0D-dm0">
-                                        <rect key="frame" x="0.0" y="714" width="353" height="30"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station 1 of 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meK-0D-dm0">
+                                        <rect key="frame" x="0.0" y="238.66666666666674" width="694" height="59.333333333333314"/>
                                         <color key="backgroundColor" white="1" alpha="0.59028352649006621" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,8 +85,8 @@
                         <outlet property="backgroundImageView" destination="aE5-Mc-wsC" id="axc-Tl-rR5"/>
                         <outlet property="progressLabel" destination="meK-0D-dm0" id="cuG-rE-MMe"/>
                         <outlet property="questionLabel" destination="xxD-Ny-GNs" id="yqh-Sk-MuG"/>
-                        <outletCollection property="choiceButtons" destination="ZUF-AS-Fzv" collectionClass="NSMutableArray" id="rRJ-CL-YWB"/>
                         <outletCollection property="choiceButtons" destination="aH4-Mn-SuW" collectionClass="NSMutableArray" id="Ez8-kc-Ve6"/>
+                        <outletCollection property="choiceButtons" destination="ZUF-AS-Fzv" collectionClass="NSMutableArray" id="rRJ-CL-YWB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,7 +95,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a-silhouette-of-a-young-fitness-enthusiast-jogging-against-a-stunning-sunrise-vertical-mobile-wallpaper-ai-generated-free-photo" width="366" height="653.33331298828125"/>
+        <image name="bgWarmUp" width="366" height="653.33331298828125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

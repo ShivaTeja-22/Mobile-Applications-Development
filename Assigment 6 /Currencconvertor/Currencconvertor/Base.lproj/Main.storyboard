@@ -44,6 +44,12 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid USD amount (integers only)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B36-3M-DcE">
+                                        <rect key="frame" x="0.0" y="85.333333333333343" width="353" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sNQ-aD-gp9">
                                         <rect key="frame" x="0.0" y="91.666666666666657" width="353" height="31"/>
                                         <subviews>
@@ -148,6 +154,7 @@
                     </view>
                     <connections>
                         <outlet property="audSwitch" destination="O8c-Es-yVc" id="dj2-jr-cBp"/>
+                        <outlet property="errorLabel" destination="B36-3M-DcE" id="Ap0-f3-c3N"/>
                         <outlet property="eurSwitch" destination="Q0w-68-8an" id="Xla-GB-Dd6"/>
                         <outlet property="inrSwitch" destination="Zbg-hj-Wti" id="Lvg-LU-nuC"/>
                         <outlet property="nrsSwitch" destination="AG0-xe-7xl" id="rR8-fW-iBH"/>
@@ -270,6 +277,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

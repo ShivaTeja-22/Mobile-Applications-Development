@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var usdTextField: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
+    //@IBOutlet weak var errorLabel: UILabel!
 
     @IBOutlet weak var inrSwitch: UISwitch!
     @IBOutlet weak var nrsSwitch: UISwitch!
@@ -31,10 +31,10 @@ class ViewController: UIViewController {
 
     @IBAction func convertTapped(_ sender: UIButton) {
         guard let text = usdTextField.text, let value = Int(text) else {
-            errorLabel.text = "Please enter a valid USD amount (integers only)"
+            //errorLabel.text = "Please enter a valid USD amount (integers only)"
             return
         }
-        errorLabel.text = ""
+        //errorLabel.text = ""
         usdAmount = value
 
         selectedCurrencies = []

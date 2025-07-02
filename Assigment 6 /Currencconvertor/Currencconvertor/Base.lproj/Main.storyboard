@@ -113,7 +113,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="convertTapped:" destination="Ydp-E2-WKr" eventType="touchUpInside" id="2i3-LZ-cd4"/>
-                                                    <segue destination="y40-Ld-wVm" kind="presentation" identifier="toConversion" id="R6i-bM-rYb"/>
+                                                    <segue destination="y40-Ld-wVm" kind="presentation" identifier="toResultVC" id="R6i-bM-rYb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -161,6 +161,7 @@
         <!--conversion-->
         <scene sceneID="O5c-iF-NpJ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DxV-DZ-b6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="conversion" id="y40-Ld-wVm" customClass="ResultViewController" customModule="Currencconvertor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uRT-fF-4yC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
@@ -256,10 +257,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="stackView" destination="Hqr-rh-5V2" id="BLp-Dg-EkX"/>
+                        <outlet property="stackView" destination="Hqr-rh-5V2" id="dy6-YU-AxL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DxV-DZ-b6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000.763358778626" y="19.718309859154932"/>
         </scene>
